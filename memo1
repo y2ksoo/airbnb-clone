@@ -1,0 +1,31 @@
+[Backend로서의 Django]
+Django API
+1. Mega Framework로서 많은 api, tool을 제공함
+ -> 대신 자유도의 한계가 발생할 수 있음
+ -> 기존 규칙을 잘 알아야 쓸 수 있음
+Flask, Pyramid와 같은 micro framework 등도 사용할 수 있음
+ -> 자유도가 높은 대신 개발기간 오래 걸림
+
+[Frontend]
+1. React
+    널리 사용됨
+    사용자와의 상호작용 많을 때 좋음 : 메뉴펼침, 페이지 이도없는 팝업 등..
+    빠른 상호작용
+
+2. Django
+    Django Template을 이용
+    콘텐츠 위주로 사용하는 웹페이지 적합
+
+
+[환경만들기]
+1. pipenv 
+    pip + virtualenv
+    손쉽게 가상환경을 만들고 pip 역할도 수행하여 패키지를 관리할 수 있음
+
+    brew install pipenv
+    pipenv --three
+
+2. Django 설치
+    virtualenv 안에서...
+    pipenv install Django=="version"
+
