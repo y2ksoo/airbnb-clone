@@ -1,0 +1,15 @@
+# Django Study notes2
+
+## Models.py
+
+- models.Model : Django에서 정의한 DB와 소통하기 위한 구조체
+
+- models 안애는 Textfield, Emailfield 등 많은 데이터형식이 미리 정의되어 있음.
+
+- 각 필드는 default="" 값을 갖거나 null=True 로 정의하여 비워둘 수 있도록 정의해야 함
+
+1. models 안에 정의된 필드를 앱의 models."class" 안에 정의하고
+
+2. python manage.py makemigrations 로 migration 파일을 만들고
+
+3. python manage.py migrate로 SQLight3 DB에 적용하면 웹페이지 표시됨
