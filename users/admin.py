@@ -13,6 +13,17 @@ from . import models
 @admin.register(models.User)
 class CustomUserAdmin(UserAdmin):
 
+    list_display = (
+        "username",
+        "email",
+        "first_name",
+        "last_name",
+        "is_staff",
+        "superhost",
+    )
+
+    list_filter = UserAdmin.list_filter + ("superhost",)
+
     """ Custom User Admin """
 
     fieldsets = UserAdmin.fieldsets + (

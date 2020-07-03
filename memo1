@@ -69,6 +69,14 @@
 
    -> Django 프로젝트와 관련된 설정을 입력함 (포함할 앱, 시간대, 언어 등..)
 
+## Django 와 python
+
+- Django 의 model은 python 의 object와 유사한 단위임
+
+- 단, Django에서 model을 만들면 추가적인 정보를 더해서 python의 object로 변환하고
+
+- 이를 QuerySet API(QuerySet Manager)를 통해 object 안의 정보를 접근할 수 있게 한다.
+
 ## Migration
 
 1. Django 가 코드내의 데이터 변경을 감지하여 DB로 저장하는 기능
