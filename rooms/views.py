@@ -1,16 +1,13 @@
-from django.shortcuts import render, redirect
-from django.core.paginator import Paginator, EmptyPage
+from django.views.generic import ListView
 from . import models
 
 
-def all_rooms(request):
-    page = request.GET.get("page", 1)
-    room_list = models.Room.objects.all()
-    paginator = Paginator(room_list, 5, orphans=2)
+class HomeView(ListView):
 
-    try:
-        rooms = paginator.page(int(page))
-        return render(request, "rooms/all_rooms.html", {"page": rooms})
-    except EmptyPage:
-        return redirect("/")
+    """ HomeView Definition """
+
+    model = models.Room
+    paginate_by = 5
+    paginate_orphans = 2
+    ordering = "created"
 

@@ -20,6 +20,16 @@ def all_rooms(request):
 
 ```
 
+## view를 구현하는 3가지 방법
+
+1. python hard coding
+
+2. python with Django API
+
+3. Class based view
+
+   - classy class based view (https://ccbv.co.uk/)
+
 ## urls.py
 
 - 사용자의 요청(user request)에 응답하는 방법을 정의함
@@ -45,11 +55,11 @@ Including another URLconf
 
 - URL의 응답의 답, 대응하는 방법을 정의함
 
-- function 으로 이루어짐
+  - function 으로 이루어짐
 
-- HttpRequest(request)를 받아 HttpResponse를 만들어냄
+  - HttpRequest(request)를 받아 HttpResponse를 만들어냄
 
-- HttpResponse로 template을 보냄
+  - HttpResponse로 template을 보냄
 
 ## template
 
