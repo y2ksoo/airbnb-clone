@@ -20,6 +20,12 @@
 
 - 주로 override를 통해 재정의 후 부모 클래스의 원본 클래도 같이 활용하기 위해 사용
 
+### try & except
+
+- error 처리를 위한 루틴
+
+- try 를 해보고 error가 발생하면 except이 실행됨
+
 ## settings.py
 
 - from django.conf import settings : 다른 모델, 파일에서 settings.py를 import를 하고 싶을 떄 사용
