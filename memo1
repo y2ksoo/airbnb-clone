@@ -77,6 +77,16 @@
 
 - 이를 QuerySet API(QuerySet Manager)를 통해 object 안의 정보를 접근할 수 있게 한다.
 
+- QuerySet Manager를 통해 object를 코드상에서 create/modify/delete 할 수 있음
+
+  > seed_amenities.py 예제 참고
+
+- 한 모델내에서 만들어진 Object는 Primary Key(pk)를 이용하여 접근할 수 있음
+
+- foreignkey 객체 접근, Manytomany 객체 접근 방법도 아래 예제 참고
+
+> seed_rooms.py 참고
+
 ## Migration
 
 1. Django 가 코드내의 데이터 변경을 감지하여 DB로 저장하는 기능

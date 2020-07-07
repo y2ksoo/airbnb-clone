@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.utils.html import mark_safe
 from . import models
 
 
@@ -21,16 +22,28 @@ class PhotoAdmin(admin.ModelAdmin):
 
     """ photo admin definitino """
 
-    pass
+    list_display = ("__str__", "get_thumbnail")
+
+    def get_thumbnail(self, obj):
+        return mark_safe(f'<img width="100px", src="{obj.file.url}" />')
+
+    get_thumbnail.short_description = "Thumbnail"
+
+
+class PhotoInline(admin.TabularInline):
+
+    model = models.Photo
 
 
 @admin.register(models.Room)
 class RoomAdmin(admin.ModelAdmin):
 
+    inlines = (PhotoInline,)
+
     fieldsets = (
         (
             "Basic Info",
-            {"fields": ("name", "description", "country", "address", "price")},
+            {"fields": ("name", "description", "country", "city", "address", "price")},
         ),
         ("Spaces", {"fields": ("beds", "bedrooms", "bath")}),
         ("Times", {"fields": ("checkin", "checkout", "instant_book")}),
@@ -77,10 +90,15 @@ class RoomAdmin(admin.ModelAdmin):
         "house_rule",
     )
 
+    raw_id_fields = ("host",)
+
     def count_amenities(self, obj):
         return obj.amenity.count()
+
+    count_amenities.short_description = "# of Amenities"
 
     def count_photos(self, obj):
         return obj.photos.count()
 
-    count_amenities.short_description = "# of Amenities"
+    count_photos.short_description = "# of Photos"
+
