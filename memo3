@@ -70,6 +70,9 @@ Including another URLconf
   ```
 
 - 반대로 base.html에서 하위 페이지의 내용을 가져올 수 있음
+
   ```html
   {% include "path/small.html" %}
   ```
+
+- Paginator

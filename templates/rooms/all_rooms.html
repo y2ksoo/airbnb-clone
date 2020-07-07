@@ -9,21 +9,16 @@
         <h3> {{room.name}} / ${{room.price}} </h3>
     {% endfor %}
 
-    <h5> 
+    <h5>     
+    {% if rooms.has_previous%}
+        <a href="?page={{rooms.number|add:-1}}">Previous</a>
+    {% endif %}
 
-        Page {{page}} of {{page_count}}
+        Page {{rooms.number}} of {{rooms.paginator.num_pages}}
 
+    {% if rooms.has_next %}
+        <a href="?page={{rooms.number|add:1}}">Next</a>
+    {% endif %}
     </h5>
-    {% if page is not 1 %}
-        <a href="?page={{page|add:-1}}">Previous</a>
-    {% endif %}
-
-    {% for page in page_range %}
-        <a href="?page={{page}}">{{page}}</a>
-    {% endfor %}
-
-    {% if not page == page_count  %}
-        <a href="?page={{page|add:1}}">Next</a>
-    {% endif %}
 
 {% endblock content%}
