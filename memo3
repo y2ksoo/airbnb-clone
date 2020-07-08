@@ -22,11 +22,13 @@ def all_rooms(request):
 
 ## view를 구현하는 3가지 방법
 
-1. python hard coding
+1. Function based view
 
-2. python with Django API
+   1.1 python hard coding
 
-3. Class based view
+   1.2 python with Django API
+
+2. Class based view
 
    - classy class based view (https://ccbv.co.uk/)
 
