@@ -26,11 +26,17 @@ def all_rooms(request):
 
    1.1 python hard coding
 
+   - 모든 기능을 사용자가 직접 만들어 제어하기는 쉽지만 코딩하기 어려움
+
    1.2 python with Django API
+
+   - 코딩하기 번거로운 기능은 API로 불러와서 사용하고 동작 로직은 직접 코딩하여 코드만으로 동작을 파악하기 쉽고 커스터마이징 하기도 쉬움
 
 2. Class based view
 
    - classy class based view (https://ccbv.co.uk/)
+
+   - 많은 부분이 API로 제공되어 단순 설정만으로 View model을 만들 수 있지만 Abstraction 때문에 내부 동작을 파악하기 힘들고 커스터마이징하기 어려움
 
 ## urls.py
 
