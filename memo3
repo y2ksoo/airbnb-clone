@@ -28,7 +28,7 @@ def all_rooms(request):
 
    - 모든 기능을 사용자가 직접 만들어 제어하기는 쉽지만 코딩하기 어려움
 
-   1.2 python with Django API
+     1.2 python with Django API
 
    - 코딩하기 번거로운 기능은 API로 불러와서 사용하고 동작 로직은 직접 코딩하여 코드만으로 동작을 파악하기 쉽고 커스터마이징 하기도 쉬움
 
@@ -94,3 +94,29 @@ Including another URLconf
   ```
 
 - Paginator
+
+# HTML
+
+## form
+
+- 웹페이지의 입력 양식
+
+### input
+
+- 입력 방법 설정
+
+- type 입력 속성, name 이름, value 기본값 등을 지정
+
+### select & option
+
+- 드롭다운 리스트 생성
+
+- option 태그 안에 드롭다운 리스트 요소를 설정하여 사용함
+
+```html
+<select>
+  <option value="ktx">KTX</option>
+  <option value="itx">ITX 새마을</option>
+  <option value="mugung">무궁화호</option>
+</select>
+```
