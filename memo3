@@ -38,6 +38,15 @@ def all_rooms(request):
 
    - 많은 부분이 API로 제공되어 단순 설정만으로 View model을 만들 수 있지만 Abstraction 때문에 내부 동작을 파악하기 힘들고 커스터마이징하기 어려움
 
+   - 다양한 View 제공
+
+      - View
+
+      - FormView
+
+      - LoginView
+
+
 ## urls.py
 
 - 사용자의 요청(user request)에 응답하는 방법을 정의함
