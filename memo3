@@ -40,12 +40,11 @@ def all_rooms(request):
 
    - 다양한 View 제공
 
-      - View
+     - View
 
-      - FormView
+     - FormView
 
-      - LoginView
-
+     - LoginView
 
 ## urls.py
 
@@ -102,7 +101,15 @@ Including another URLconf
   {% include "path/small.html" %}
   ```
 
-- Paginator
+## forms.py
+
+- HTTP 형식의 Form을 정의하는 곳
+
+- 기본 forms를 이용하여 만들 수 있음
+
+- Modelform : model의 정보와 연결된 form
+
+* Paginator
 
 # HTML
 

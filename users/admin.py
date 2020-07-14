@@ -22,7 +22,6 @@ class CustomUserAdmin(UserAdmin):
 
     list_display = (
         "username",
-        "get_thumbnail",
         "email",
         "first_name",
         "last_name",
