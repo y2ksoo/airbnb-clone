@@ -3,3 +3,13 @@
 ## TailwindCSS
 
 - CSS framework
+
+- node.js
+
+  - 자바스크립트의 서버사이드 언어
+
+  - npm(node package manager): node.js 기반 패키시 모듈 관리도구
+
+- gulp
+
+  - 자동화 빌드 시스템 : JS 또는 CSS의 반복작업을 처리해 줌
