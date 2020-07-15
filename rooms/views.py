@@ -9,8 +9,8 @@ class HomeView(ListView):
     """ HomeView Definition """
 
     model = models.Room
-    paginate_by = 5
-    paginate_orphans = 2
+    paginate_by = 8
+    paginate_orphans = 0
     ordering = "created"
     context_object_name = "rooms"
 
