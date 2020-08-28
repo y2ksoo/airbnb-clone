@@ -77,6 +77,14 @@ Including another URLconf
 
   - HttpResponse로 template을 보냄
 
+- 화면에 표시되는 것에 대한 정의
+
+- Backend data의 형태는 model에서 정의한다
+
+- data는 model 내의 클래스 형태로 DB에 저장된다.
+
+- View에서는 DB의 object를 가져와서 활용하자
+
 ## template
 
 - 파이썬이 컴파일해서 만들어 주는 html

@@ -106,7 +106,8 @@
 ## Django Project 구성
 
 1. Project : App 의 집합
-   1.1 : Project 생성 시 지정한 이름(config)안에 있는 settings.py, urls.py 등을 통해 여러 APP을 통합하고 관리할 수 있음
+
+   - Project 생성 시 지정한 이름(config)안에 있는 settings.py, urls.py 등을 통해 여러 APP을 통합하고 관리할 수 있음
 
 2. App : fuction 의 집합
 
